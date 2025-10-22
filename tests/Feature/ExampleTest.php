@@ -18,5 +18,5 @@ it('muestra el detalle de un usuario', function () {
     expect($response->json('id'))->toBe($user->id);
     expect($response->json('name'))->toBe($user->name);
     expect($response->json('email'))->toBe($user->email);
-
+    expect($response->json('password'))->toBe($user->password);
 });
